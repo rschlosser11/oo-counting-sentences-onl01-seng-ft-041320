@@ -19,6 +19,7 @@ class String
     i = 0
     while i < sentence_arr.length
       sentence_arr.delete_at(i) if sentence_arr[i] == '';
+      i += 1
     end
   end
 end
