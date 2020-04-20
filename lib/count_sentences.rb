@@ -15,6 +15,10 @@ class String
   end
 
   def count_sentences
-    
+    sentence_arr = self.split(/[.?!]/)
+    i = 0
+    while i < sentence_arr.length
+      sentence_arr.delete_at(i) if sentence_arr[i] == '';
+    end
   end
 end
