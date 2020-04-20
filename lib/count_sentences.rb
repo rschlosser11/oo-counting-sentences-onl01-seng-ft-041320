@@ -21,5 +21,6 @@ class String
       sentence_arr.delete_at(i) if sentence_arr[i] == '';
       i += 1
     end
+    sentence_arr.length
   end
 end
